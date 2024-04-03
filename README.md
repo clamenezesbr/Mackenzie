@@ -1,4 +1,5 @@
 # Mackenzie
 
-![Mackenzie Preview Image](https://i.ibb.co/yfqngn2/Calculadora-preta.png)
-![Mackenzie Preview Image](https://i.ibb.co/QPBTKBq/Calculadora-branca.png).
+<div align="center">
+  ![Mackenzie Preview Image](https://i.ibb.co/1X8wyzb/Calculadoras-amostra.png)
+</div>
