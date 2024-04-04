@@ -1,3 +1,3 @@
 # Mackenzie
 
-  ![Mackenzie Preview Image](https://i.ibb.co/fx37wky/Mackenzie-Github.png)
+![Mackenzie Preview Image](https://i.ibb.co/fx37wky/Mackenzie-Github.png)
