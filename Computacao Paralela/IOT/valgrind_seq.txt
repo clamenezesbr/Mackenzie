@@ -1,0 +1,26 @@
+==502== Cachegrind, a high-precision tracing profiler
+==502== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==502== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==502== Command: ./sensor_analyzer_seq sensores.log
+==502== 
+
+ RELATÓRIO DE LOGS IoT 
+Média dos 10 Primeiros Sensores:
+Sensor sensor_001: Média 26.50°C
+Sensor sensor_002: Média 26.50°C
+Sensor sensor_004: Média 26.51°C
+Sensor sensor_005: Média 26.52°C
+Sensor sensor_007: Média 26.50°C
+Sensor sensor_010: Média 26.52°C
+Sensor sensor_011: Média 26.51°C
+Sensor sensor_015: Média 26.51°C
+Sensor sensor_016: Média 26.50°C
+Sensor sensor_021: Média 26.52°C
+
+ ESTATÍSTICAS GERAIS 
+Sensor mais instável: sensor_082 (Desvio Padrão: 4.48)
+Total de alertas: 1642578
+Consumo total de energia: 512136901.09 Wh
+Tempo de execução: 340.3964 segundos
+==502== 
+==502== I refs:        35,040,708,949
