@@ -37,6 +37,8 @@ typedef struct {
     int ponteiro_clock;
 } Simulador;
 
+void inicializar_simulador(Simulador *sim);
+
 void carregar_configuracao(
     Simulador *sim,
     const char *arquivo_config
