@@ -79,9 +79,9 @@ Os fluxos completos estão em [`Concepção/processos.md`](./Concepção/process
 
 ## Equipe — Squad Dealers
 
-| Nome | RA | Papel |
-|---|---|---|
-| Luiz Filipe de Almeida Tannus | 10418230 | Representante da Squad |
-| Hugo Rafael Weng | 10417866 | Comitê de Projeto |
-| Heitor Maciel de Vasconcellos Leite | 10402559 | Comitê de Projeto |
-| Gabriel Rezende Menezes | 10419003 | Membro |
+| Nome |
+|---|
+| Gabriel Rezende Menezes |
+| Luiz Filipe de Almeida Tannus |
+| Hugo Rafael Weng |
+| Heitor Maciel de Vasconcellos Leite |
