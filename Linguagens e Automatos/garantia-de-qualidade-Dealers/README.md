@@ -1,13 +1,87 @@
-# Garantia de Qualidade
+# Garantia de Qualidade — Squad Dealers
 
+Projeto acadêmico desenvolvido para a disciplina de **Linguagens e Autômatos / Engenharia de Software** na Universidade Presbiteriana Mackenzie.
 
+---
 
 ## Contexto
 
-Uma empresa de desenvolvimento de software executa diversos projetos de desenvolvimento de software ao mesmo tempo.
+Uma empresa de desenvolvimento de jogos digitais opera simultaneamente em múltiplos projetos para **PC, consoles e dispositivos móveis**. Cada equipe atualmente organiza seu fluxo de trabalho de forma autônoma, resultando em falta de padronização, fragmentação de dados e dificuldade gerencial para comparar projetos.
 
-O time de qualidade deve manter uma visão unificada do ciclo de vida de sistemas de software da empresa em seus diversos estágios, permitindo que a alta direção da empresa possa visualizar e comparar os diversos sistemas de software desenvolvidos ou em desenvolvimento sob o ponto de vista de prazo, custo, retrabalho, erros e também comparar em alto nível o planejado x executado de cada projeto.
+## Solução Proposta
 
-Para cada projeto é necessário planejar, controlar/medir e comparar com o desempenho de outros projetos semelhantes.
+Um **sistema interno de monitoramento centralizado** que atua como camada complementar de inteligência sobre as ferramentas já utilizadas pelas equipes — sem substituí-las. O sistema permite:
 
-O time de qualidade precisa estabelecer um modelo de ciclo de vida padrão para os sistemas da empresa e definir processos padronizados para facilitar o planejamento, controle/medição e evolução das ações (melhoria contínua) nos projetos.
+- Registrar e acompanhar bugs com prioridade, responsável e tempo de correção
+- Monitorar o progresso de atividades (planejado x executado)
+- Gerar métricas e relatórios gerenciais comparativos entre projetos
+- Integrar com sistemas externos via API
+
+---
+
+## Arquitetura
+
+O sistema segue uma arquitetura em camadas:
+
+```
+Cliente (Navegador)
+    └── SPA (Single Page Application)
+            │ HTTPS
+    BFF - Back For Front
+            │ HTTP
+    Servidor de Aplicação
+        ├── Controladores (Atividades, Métricas, Previsão)
+        ├── Serviços de Domínio
+        └── Repositório de Dados
+            │ TCP/IP (JDBC)
+    MariaDB
+```
+
+Os diagramas completos (pacotes, componentes e implantação) foram modelados com **PlantUML** e estão disponíveis em [`Design/`](./Design/).
+
+---
+
+## Tecnologias
+
+| Camada | Tecnologia |
+|---|---|
+| Frontend | SPA (Single Page Application) |
+| Gateway | BFF (Back For Front) |
+| Backend | REST API — Controladores + Serviços de Domínio |
+| Banco de Dados | MariaDB |
+| Modelagem | PlantUML |
+| Comunicação | HTTPS, HTTP, TCP/IP (JDBC) |
+
+---
+
+## Estrutura do Repositório
+
+```
+├── Concepção/          # Definição do problema, casos de uso e entidades de domínio
+├── Design/             # Diagramas de arquitetura (pacotes e componentes)
+├── Implantação/        # Diagrama de implantação (topologia física)
+├── Exercícios/         # Exercícios da disciplina
+├── GroupInformation.md # Informações do grupo
+└── Squad-dealers.md    # Apresentação da squad e competências
+```
+
+---
+
+## Processos Principais
+
+**Registro e Tratamento de Bugs** — identificação, classificação por prioridade, atribuição de responsável, ciclo de correção e validação.
+
+**Monitoramento de Progresso** — coleta de dados de atividades, bugs e testes; geração de indicadores e relatórios gerenciais.
+
+Os fluxos completos estão em [`Concepção/processos.md`](./Concepção/processos.md).
+
+---
+
+## Equipe — Squad Dealers
+
+| Nome | RA | Papel |
+|---|---|---|
+| Luiz Filipe de Almeida Tannus | 10418230 | Representante da Squad |
+| Hugo Rafael Weng | 10417866 | Comitê de Projeto |
+| Heitor Maciel de Vasconcellos Leite | 10402559 | Comitê de Projeto |
+| Gabriel Rezende Menezes | 10419003 | Membro |
