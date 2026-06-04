@@ -1,28 +1,42 @@
-# Projeto: garantia de Qualidade
+# Projeto: Garantia de Qualidade
 
-## Diagrama de casos de uso
+## Diagrama de Casos de Uso
 
 ```plantuml
 @startuml
-
 left to right direction
-scale 0.8
 
-actor "ator 1" as actor01
-actor "ator 2" as actor02
+actor "Equipe de QA" as QA
+actor "Devs/Designers" as Dev
+actor "Gestão de Projetos" as GP
+actor "Marketing/Publicação" as MKT
+actor "Sistemas Externos" as EXT
 
+rectangle "Sistema de Monitoramento de QA" {
 
-rectangle "fronteira sistemica"{
-    usecase "UC001 Meta1 de um ator" as UC001
-    usecase "UC002 Meta2 de um ator" as UC002
+    QA --> (Registrar Bugs)
+    QA --> (Atualizar Status de Testes)
+    QA --> (Consultar Métricas de Qualidade)
 
+    Dev --> (Atualizar Progresso de Atividades)
+    Dev --> (Consultar Bugs)
+
+    GP --> (Visualizar Relatórios Gerenciais)
+    GP --> (Comparar Performance entre Projetos)
+    GP --> (Monitorar Prazos)
+
+    MKT --> (Consultar Dados de Progresso)
+    MKT --> (Analisar Previsão de Lançamento)
+
+    EXT --> (Integrar Dados via API)
+
+    (Registrar Bugs) --> (Gerar Métricas de Bugs) : <<include>>
+    (Atualizar Progresso de Atividades) --> (Atualizar Métricas) : <<include>>
+    (Integrar Dados via API) --> (Atualizar Métricas) : <<include>>
+
+    (Visualizar Relatórios Gerenciais) --> (Gerar Relatórios) : <<include>>
+    (Comparar Performance entre Projetos) --> (Gerar Relatórios) : <<include>>
 }
-
-actor01 -- UC001
-actor01 -- UC002
-
-actor02 --|> actor01
-
 
 @enduml
 ```
